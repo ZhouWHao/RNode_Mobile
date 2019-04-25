@@ -1,0 +1,98 @@
+@import (reference) '../../style/mixin.less';
+@color: #fff;
+
+.user-container {
+  margin-top: 49px;
+  .user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+    background: @color;
+    z-index: 99;
+    overflow: hidden;
+    .borderBottom(#ccc);
+    img {
+      display: block;
+      .wh(10rem);
+      max-width: 200px;
+      max-height: 200px;
+      .circleImg;
+      border: 1px solid #ccc;
+    }
+    div {
+      .name {
+        .font(2.6rem, right, 500, black);
+      }
+      p {
+        font-size: 1.2rem;
+        text-align: right;
+      }
+    }
+  }
+  .user-topic {
+    nav {
+      font-size: 1.4rem;
+      .wh(100%, 4rem);
+      line-height: 4rem;
+      display: flex;
+      background: @color;
+      z-index: 99;
+      .borderBottom(#ccc);
+      p {
+        width: 50%;
+        text-align: center;
+      }
+      p:first-child {
+        border-right: 1px solid #ccc;
+      }
+      .active {
+        color: @style-color;
+        background: #eee;
+      }
+    }
+    .topic-list {
+      .nomsg {
+        margin-top: 40px;
+      }
+      .topic-list-cell {
+        color: black;
+        padding: 1rem;
+        .borderBottom;
+        a {
+          color: black;
+        }
+        header {
+          overflow: hidden;
+          img {
+            .wh(4rem);
+            .circleImg;
+            float: left;
+          }
+          .name {
+            font-size: 1.6rem;
+            height: 4rem;
+            line-height: 4rem;
+            float: left;
+          }
+          .time {
+            .name;
+            font-size: 1.4rem;
+            color: #aaa;
+            float: right;
+          }
+        }
+        .title {
+          display: block;
+          width: 80%;
+          margin: 0 auto;
+          padding: .5rem;
+          font-size: 1.6rem;
+          .text-overflow;
+        }
+      }
+    }
+  }
+}
+

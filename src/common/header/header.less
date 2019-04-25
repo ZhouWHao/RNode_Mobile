@@ -1,0 +1,32 @@
+
+@import (reference) '../../style/mixin.less';
+
+.header_container {
+  .positionTop;
+  .wh(100%, 49px);
+  line-height: 49px;
+  .font(16px, center, 400, black);
+  .borderBottom(#ccc);
+  background: #fff;
+  z-index: 99;
+  .left {
+    .wh(40px,40px);
+    font-size: 30px;
+    float: left;
+    margin: -3px 5px;
+    img {
+      .wh(40px,40px);
+      vertical-align: middle;
+      margin-left: 5px;
+      .circleImg;
+    }
+    a {
+      color: black;
+    }
+  }
+  .right {
+    .wh(40px,40px);
+    font-size: 24px;
+    float: right;
+  }
+}

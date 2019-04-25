@@ -1,0 +1,26 @@
+@import (reference) '../../style/mixin.less';
+
+.create-container {
+  margin-top: 50px;
+  padding: 1rem;
+  .title {
+    display: block;
+    .wh(100%, 4rem);
+    outline: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: .5rem;
+    border: 1px solid #eee;
+    .font(1.4rem, left, 400, black);
+  }
+  .tab {
+    .title;
+    background: #fff;
+  }
+  .content {
+    .title;
+    resize: none;
+    .wh(100%, 30rem);
+  }
+}
